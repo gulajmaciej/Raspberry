@@ -1,0 +1,12 @@
+import sys
+from picamera import PiCamera
+camera = PiCamera()
+
+camera.start_preview()
+
+while True:
+    choice = get_input()
+    if choice == "a":
+        print("press q for quit")
+    elif choice == "q":
+        sys.exit()
